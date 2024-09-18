@@ -1,0 +1,30 @@
+<div class="home-container">
+  <table class="table table-striped table-hover table-bordered" *ngIf="appList && appList.length > 0">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">Electronic Name</th>
+        <th scope="col">Load No</th>
+        <th scope="col">Power Of Load (Volts/Amps)</th>
+        <th scope="col">Total Power</th>
+        <th scope="col">Operating Hours</th>
+        <th scope="col">Total Energy</th>
+        <th scope="col">Effective Sunlight</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let list of appList">
+        <td>{{ list.electronicName }}</td>
+        <td>{{ list.no_Of_Load }}</td>
+        <td>{{ list.power_Of_Load }}</td>
+        <td>{{ calcTotalPower(list) }}</td>
+        <td>{{ list.operating_Hours }}</td>
+        <td>{{ calcTotalEnergy(list) }}</td>
+        <td>{{ list.effective_Sunlight }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <p *ngIf="appList && appList.length > 0">Total energy required per day: {{ calcSumTotalEnergy() }}</p>
+  <p *ngIf="appList && appList.length > 0">Total power required per day: {{ calcSumTotalPower() }}</p>
+  <br>
+  <button type="submit" (click)="logOut()">LogOut</button>
+</div>

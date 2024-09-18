@@ -1,0 +1,57 @@
+
+
+<div class="container">
+    <form [formGroup]="applForm" (ngSubmit)="addAppl()">
+
+        <div class="mb-3">
+          <label for="exampleInputname1" class="form-label">Electronic name:</label>
+          <input
+          type="text"
+          formControlName="loadName"
+           class="form-control"
+           id="exampleInputname1" >
+          
+        </div>
+        <br>
+        <div class="mb-3">
+          <label for="exampleInputPower" class="form-label">Load Power:</label>
+          <input
+           type="text"
+           formControlName="loadPower"
+            class="form-control"
+             id="exampleInputPower" >
+            
+        </div>
+        <br>
+        <div class="mb-3">
+          <label for="exampleInputOp" class="form-label">Operating Hours:</label>
+          <input
+          type="text"
+          formControlName="operatingHours"
+          class="form-control" id="exampleInputOp">
+          
+        </div>
+        <br>
+        <div class="mb-3">
+          <label for="exampleInputNoOfLoad" class="form-label"> No Of Load:</label>
+          <input
+           type="text"
+           formControlName="noOfLoad"
+           class="form-control" id="exampleInputNoOfLoad">
+        </div>
+      <br>
+        <div class="mb-3">
+          <label for="exampleInputEsun" class="form-label"> Effective Sunlight:</label>
+          <input
+           type="text"
+           formControlName="effectiveSunlight"
+           class="form-control" id="exampleInputEsun">
+        </div>
+      
+        <button type="submit" id="addApp"  class="btn btn-primary">Submit</button>
+      </form>
+      <!-- <div *ngFor="let item of users">
+        {{item.name}}
+      </div> -->
+</div>
+

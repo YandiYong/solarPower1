@@ -1,0 +1,94 @@
+{
+  "Users": [
+    {
+      "id": "1",
+      "name": "Yandiswa",
+      "email": "yandisandarane@gmail.com",
+      "password": "Choppa#30123"
+    },
+    {
+      "id": "2",
+      "name": "Nhlanhla",
+      "email": "nhlanhlandarane@gmail.com",
+      "password": "nhlanhla#30123"
+    },
+    {
+      "id": "3",
+      "name": "Yandiswa",
+      "email": "yandiswandarane1@gmail.com",
+      "password": "Choppa#301234"
+    },
+    {
+      "id": "2638",
+      "names": "Ntsika",
+      "email": "nti@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "4a20",
+      "names": "Ntsika",
+      "email": "nti@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "7d89",
+      "names": "Mazwi",
+      "email": "ma@gmail.com",
+      "password": "9876543"
+    },
+    {
+      "id": "a5a1",
+      "names": "Thembekile",
+      "email": "tee@gmail.com",
+      "password": "tee12345678"
+    },
+    {
+      "id": "79f1",
+      "names": "Thembekile",
+      "email": "tee@gmail.com",
+      "password": "tee12345678"
+    },
+    {
+      "names": "Duzi",
+      "email": "duzi@gmail.com",
+      "password": "duzi12345",
+      "id": "6nmcX-u"
+    },
+    {
+      "names": "Sharo",
+      "email": "sharo@gmail.com",
+      "password": "sharo12345",
+      "id": "VvQY5fC"
+    }
+  ],
+  "Appliances": [
+    {
+      "electronicName": "Fridge",
+      "no_Of_Load": "1",
+      "power_Of_Load": "254",
+      "operating_Hours": "12",
+      "effective_Sunlight": "5"
+    },
+    {
+      "electronicName": "Tv",
+      "no_Of_Load": "5",
+      "power_Of_Load": "123",
+      "operating_Hours": "8",
+      "effective_Sunlight": "5"
+    },
+    {
+      "electronicName": "Laptop",
+      "no_Of_Load": "4",
+      "power_Of_Load": "200",
+      "operating_Hours": "8",
+      "effective_Sunlight": "5"
+    },
+    {
+      "electronicName": "PlayStation",
+      "no_Of_Load": "1",
+      "power_Of_Load": "247",
+      "operating_Hours": "4",
+      "effective_Sunlight": "5"
+    }
+  ]
+}

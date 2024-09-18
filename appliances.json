@@ -1,0 +1,32 @@
+{
+  "Appliances": [
+    {
+      "electronicName": "Fridge",
+      "no_Of_Load": "1",
+      "power_Of_Load": "254",
+      "operating_Hours":"12",
+      "effective_Sunlight":"5"
+    },
+    {
+      "electronicName": "Tv",
+      "no_Of_Load": "5",
+      "power_Of_Load": "123",
+      "operating_Hours":"8",
+      "effective_Sunlight":"5"
+    },
+    {
+      "electronicName": "Laptop",
+      "no_Of_Load": "4",
+      "power_Of_Load": "200",
+      "operating_Hours":"8",
+      "effective_Sunlight":"5"
+    },
+    {
+      "electronicName": "PlayStation",
+      "no_Of_Load": "1",
+      "power_Of_Load": "247",
+      "operating_Hours":"4",
+      "effective_Sunlight":"5"
+    }
+  ]
+}

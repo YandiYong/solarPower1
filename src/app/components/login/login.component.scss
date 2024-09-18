@@ -1,0 +1,43 @@
+.container{
+   background-color: aliceblue;
+   height: 100vh;
+   
+}
+
+form{
+    background-color: aquamarine;
+    width: 30%;
+    margin-left: 450px;
+    height: 50vh;
+}
+
+label{
+    margin-left: 10px;
+    background-color: aqua;
+    
+}
+input{
+    margin-top: 20px; 
+    border-radius: 10px; 
+    border: solid 0px;
+    height: 20px;
+
+}
+
+#exampleInputEmail1{
+    margin-top: 100px;
+    margin-left: 120px;
+}
+#exampleInputPassword1{
+    margin-left: 40px;
+}
+
+#loginBtn{
+    margin-left: 8rem;
+    color: white;
+    background-color: rgb(23, 206, 145);
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    margin-top: 50px;
+}

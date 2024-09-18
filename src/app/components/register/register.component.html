@@ -1,0 +1,64 @@
+
+<div class="container">
+
+ 
+<form [formGroup]="registerForm" (ngSubmit)="register()">
+
+  <div class="mb-3">
+    <label for="exampleInputname1" class="form-label">Enter names:</label>
+    <input
+    type="text"
+    formControlName="fullName"
+     class="form-control"
+     id="exampleInputname1" aria-describedby="emailHelp">
+     <small class="block p-error">
+      <div *ngIf="registerForm.controls['fullName'].errors?.['required']">Names is required</div>
+      <div *ngIf="registerForm.controls['fullName'].errors?.['pattern']">Names should be letters</div>
+     </small>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input
+     type="email"
+     formControlName="email"
+      class="form-control"
+       id="exampleInputEmail1" aria-describedby="emailHelp">
+       <small *ngIf="registerForm.controls['email'].invalid && (registerForm.controls['email'].dirty || registerForm.controls['email'].touched)"
+        class="block p-error">
+        <div *ngIf="registerForm.controls['email'].errors?.['required']">Email is required!</div>
+        <div *ngIf="registerForm.controls['email'].errors?.['email']">Email should be valid!</div>
+       </small>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input
+    type="password"
+    formControlName="password"
+    class="form-control" id="exampleInputPassword1">
+    <small *ngIf="registerForm.controls['password'].invalid && (registerForm.controls['password'].dirty || registerForm.controls['password'].touched)"
+        class="block p-error">
+        <div *ngIf="registerForm.controls['password'].errors?.['required']">Password is required!</div>
+       <!-- <div *ngIf="registerForm.controls['password'].errors?.['pattern']">Password should be valid!</div> -->
+       </small>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputConfirmPassword1" class="form-label">Confirm Password</label>
+    <input
+     type="password"
+     formControlName="confirmPassword"
+     class="form-control" id="exampleInputConfirmPassword1">
+     <small *ngIf="registerForm.controls['confirmPassword'].invalid && (registerForm.controls['confirmPassword'].dirty || registerForm.controls['confirmPassword'].touched)"
+        class="block p-error">
+        <div *ngIf="registerForm.controls['confirmPassword'].errors?.['required']"> Confirm Password!</div>
+       </small>
+       <small *ngIf="registerForm.errors?.['passwordMismatch'] && (registerForm.controls['confirmPassword'].valid && registerForm.controls['password'].valid)"
+        class="block p-error">
+         <br>
+        Password should match!
+       </small>
+  </div>
+
+  <button type="submit" id="regBtn" [disabled]="registerForm.invalid"  class="btn btn-primary">Submit</button>
+</form>
+</div>
